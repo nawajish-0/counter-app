@@ -1,11 +1,8 @@
-
-import './App.css';
-import { CounterPage } from './Pages/CounterPage';
+import "./App.css";
+import { CounterPage } from "./Pages/CounterPage";
 
 function App() {
-  return (
-    <CounterPage/>
-  );
+  return <CounterPage />;
 }
 
 export default App;

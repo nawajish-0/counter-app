@@ -8,7 +8,6 @@ export const CounterPage = () => {
   const updateCount = (val) => {
     if (val === "+") {
       setCount(count + 1); //state change
-
     } else {
       if (count !== 0) {
         setCount(count - 1); //state change
@@ -19,7 +18,11 @@ export const CounterPage = () => {
   return (
     <div className="container">
       <Message classname="alert alert-info" msg="Counter App" />
-      <Message value={count} classname="alert alert-danger" msg="Counter Value Is: " />
+      <Message
+        value={count}
+        classname="alert alert-danger"
+        msg="Counter Value Is: "
+      />
       <Button fn={updateCount} val="+" classname="btn btn-success me-2" />
       <Button fn={updateCount} val="-" classname="btn btn-danger" />
     </div>
